@@ -50,7 +50,7 @@
 } */
 .header-wrapper {
     height: 100vh;
-    /*width: 100vw;*/
+    width: 100vw;
     background: linear-gradient(-45deg, #1488CC, #4b49a5, #302b63, #2B32B2);
     background-size: 400% 400%;
     display: flex;
@@ -154,9 +154,19 @@
     visibility: visible;
     font-size: 14px;
 }
-
-
-header #headerContainer {
+header #headerAvatar {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    border: 7.5px solid black;
+    background-color: #313b3d;
+    background-image: url("jose-paulo.jpg");
+    background-size: 300px 300px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  header #headerContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -171,26 +181,32 @@ header #headerContainer {
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
+  } 
+
+  /*links*/
+
+  .links {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: center;
   }
 
-  header #headerAvatar {
-    width: 300px;
-    height: 300px;
-    border-radius: 300px;
-    border: 7.5px solid var(--accent);
-    background-color: #313b3d;
-    background-image: url("jose-paulo.jpg");
-    background-size: 300px 300px;
-    background-position: center center;
-    background-repeat: no-repeat;
+  
+  .links svg {
+    width: 50px;
   }
+
 
   h1 {
     display: block;
     font-size: 2em;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
-    margin-inline-start: 56px;
+    margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
     unicode-bidi: isolate;
@@ -201,11 +217,23 @@ h2 {
     font-size: 1.5em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
-    margin-inline-start: 21px;
+    margin-inline-start: 51px;
     margin-inline-end: 0px;
     font-weight: bold;
     unicode-bidi: isolate;
 }
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
 /*---------------ANIMATE---------------*/
 
 
@@ -329,5 +357,3 @@ h2 {
     }
 
 }
-
-
